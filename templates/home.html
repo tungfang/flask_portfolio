@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charles Tung Fang</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="name">
+                <h1>Charles Tung Fang</h1>
+                <p class="chinese_name">東方譯慷</p>
+            </div>
+                
+            <nav class="menu">
+                <a href="#" class="hide-desktop">
+                    <img src="{{ url_for('static', filename='ham.svg') }}" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="{{ url_for('static', filename='exit.svg') }}" alt="exit menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/cv">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <nav class="social-icon">
+                <div class="col">
+                    <a href="https://www.instagram.com/charlestungfang/">
+                        <img src="{{ url_for('static', filename='instagram.png') }}" alt="instagram" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/c.tungfang">
+                        <img src="{{ url_for('static', filename='facebook.png') }}" alt="fb" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/ykDongFang">
+                        <img src="{{ url_for('static', filename='twitter.png') }}" alt="twitter" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/tungfang/">
+                        <img src="{{ url_for('static', filename='linkedin.png') }}" alt="linkedin" width="40" height="40">
+                    </a>
+                </div>
+            </nav>
+
+            <img src="{{ url_for('static', filename='profile_pic.jpg') }}" alt="profile pic" class="profile_pic">
+
+            <div class="text">
+                    <p class="" style="white-space:pre-wrap;">Hello! I am a Master student in <a href="https://www.ece.uw.edu/">Electrical &amp; Computer Engineering</a> at <a href="https://www.washington.edu/">the University of Washington</a>. I am advised by <a href="https://people.ece.uw.edu/hwang/">Professor Jenq-Neng Hwang</a>, and I work in his group, <a href="https://ipl-uw.github.io/">Information Processing Lab</a>. My interests are Computer Vision, Autonomous Driving System and Machine Learning.</p>
+
+                    <p>In 2019, I spent a summer in Bejing, China being on a basketball TV show <a href="https://v.qq.com/detail/8/83425.html"> Game On </a>produced by Tencent. After that, I received my BS in Electrical & Computer Engineering with Embedded System Specialization from the University of Washington. </p>
+
+                    <p> Outside of classroom, you can find me in the gym or on my way to the gym. Or you can watch my hoop mixtape <a href="https://www.youtube.com/watch?v=XE9BcRNSdbY&t=6s">here!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
+         
