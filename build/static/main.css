@@ -1,0 +1,163 @@
+
+body{
+  background-color: #f0efef;
+  color: black;
+  margin:0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: .8em 1.2em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5px;
+  margin-bottom: 1em;
+}
+
+.name {
+  font-size: 0.8em;
+  line-height: 0.5em;
+}
+
+.col {
+  margin-top: 0;
+  padding-right: 25px;
+  float: left;
+}
+
+.profile_pic {
+  text-align: center;
+  margin-top: 2em;
+  width: 85%;
+  height: auto;
+  margin-right: 60px;
+  margin-left: 30px;
+}
+
+.text {
+  margin-top: 40px;
+  line-height: 1.5em;
+  color: #535150;
+  padding: 0;
+  display: inline-block;
+  width: 100%; 
+}
+
+.text a {
+  color: #1f2020;
+  text-decoration: none;
+  font-weight: 480;
+}
+
+
+nav ul {
+    position: fixed;
+    width: 50%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49,55,59);
+}
+
+
+nav ul li a:hover {
+    background-color: rgb(65,73,78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+
+
+.hide-mobile {
+  display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .name {
+    font-size: 0.7em;
+  }
+
+  .profile_pic {
+    width: 420px;
+    height: auto;
+    float: left;
+  }
+
+  .col {
+    padding-right: 10px;
+  }
+
+
+  .show-desktop {
+    display: block;
+    margin: 0 auto 13% auto;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    display: flex;
+    height: auto;
+    padding-top: 0;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    color: black;
+    background-color: inherit;
+    padding: 1em 2em;
+  }
+
+  nav ul li a:hover{
+    background-color: inherit;
+  }
+}
+
+
+@media only screen and (min-width: 1140px) {
+  .text {
+    width: 35%; 
+    display: inline;
+    float: left;
+  }
+}

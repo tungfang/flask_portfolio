@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charles Tung Fang - CV</title>
+    <link rel="stylesheet" type="text/css" href="/static/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="name">
+                <h1>Charles Tung Fang</h1>
+                <p class="chinese_name">東方譯慷</p>
+            </div>
+                
+            <nav class="menu">
+                <a href="#" class="hide-desktop">
+                    <img src="/static/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="/static/exit.svg" alt="exit menu">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/cv">CV</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <nav class="social-icon">
+                <div class="col">
+                    <a href="https://www.instagram.com/charlestungfang/">
+                        <img src="/static/instagram.png" alt="instagram" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/c.tungfang">
+                        <img src="/static/facebook.png" alt="fb" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://twitter.com/ykDongFang">
+                        <img src="/static/twitter.png" alt="twitter" width="40" height="40">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/tungfang/">
+                        <img src="/static/linkedin.png" alt="linkedin" width="40" height="40">
+                    </a>
+                </div>
+            </nav>
+
+            
+            <div class="resume">
+                <iframe style="width:60vw; height:78vw;" src="/static/resume.pdf" frameborder="0"></iframe>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
+         
