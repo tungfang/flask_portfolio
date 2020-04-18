@@ -103,6 +103,11 @@ nav ul li a:hover {
   display: none;
 }
 
+.resume iframe {
+  width: 95vw;
+  height: 123vw;
+}
+
 
 @media only screen and (min-width: 1024px) {
   .name {
@@ -151,6 +156,7 @@ nav ul li a:hover {
   nav ul li a:hover{
     background-color: inherit;
   }
+
 }
 
 
@@ -159,5 +165,17 @@ nav ul li a:hover {
     width: 35%; 
     display: inline;
     float: left;
+  }
+
+  .resume iframe {
+    width: 80vw;
+    height: 104vw;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .resume iframe {
+    width: 50vw;
+    height: 65vw;
   }
 }
