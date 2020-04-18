@@ -104,8 +104,8 @@ nav ul li a:hover {
 }
 
 .resume iframe {
-  width: 95vw;
-  height: 123vw;
+  width: 50vw;
+  height: 65vw;
 }
 
 
@@ -168,9 +168,3 @@ nav ul li a:hover {
   }
 }
 
-@media only screen and (min-width: 750px) {
-  .resume iframe {
-    width: 50vw;
-    height: 65vw;
-  }
-}
